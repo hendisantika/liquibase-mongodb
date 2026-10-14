@@ -16,7 +16,7 @@
     <properties>
         <java.version>25</java.version>
         <lombok.version>1.18.42</lombok.version>
-        <liquibase-mongo-ext.version>4.24.0</liquibase-mongo-ext.version>
+        <liquibase-mongo-ext.version>5.0.4</liquibase-mongo-ext.version>
         <liquibase-maven-plugin.version>4.25.1</liquibase-maven-plugin.version>
     </properties>
     <dependencies>
