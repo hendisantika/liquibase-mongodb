@@ -1,0 +1,97 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "insert-customers",
+        "author": "hendisantika",
+        "comment": "Insert base customer",
+        "changes": [
+          {
+            "insertMany": {
+              "collectionName": "customers",
+              "documents": {
+                "$rawJson": [
+                  {
+                    "name": "Yuji"
+                  },
+                  {
+                    "name": "Megumi"
+                  },
+                  {
+                    "name": "Gojo"
+                  },
+                  {
+                    "name": "Naobara"
+                  },
+                  {
+                    "name": "Sukuna"
+                  },
+                  {
+                    "name": "Geto"
+                  },
+                  {
+                    "name": "Panda"
+                  },
+                  {
+                    "name": "Maki"
+                  },
+                  {
+                    "name": "Mai"
+                  },
+                  {
+                    "name": "Mechamaru"
+                  },
+                  {
+                    "name": "Toge"
+                  },
+                  {
+                    "name": "Aokutsu"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "insert-owner",
+        "author": "hendisantika",
+        "comment": "Insert base customer owner",
+        "changes": [
+          {
+            "insertOne": {
+              "collectionName": "customers",
+              "document": {
+                "$rawJson": {
+                  "name": "John Doe"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "id": "insert-test",
+        "author": "hendisantika",
+        "tag": "0.10.0",
+        "comment": "Insert base customer owner",
+        "changes": [
+          {
+            "insertOne": {
+              "collectionName": "customers",
+              "document": {
+                "$rawJson": {
+                  "name": "Jane Doe"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
